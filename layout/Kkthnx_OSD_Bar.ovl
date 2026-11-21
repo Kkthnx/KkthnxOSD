@@ -1,0 +1,72 @@
+[Master]
+Implementation=2
+FontFace=Bahnschrift
+FontHeight=-15
+FontWeight=600
+ZoomRatio=1
+[Settings]
+Name=Kkthnx OSD Bar
+EnvVars=
+RefreshPeriod=1000
+LockUserSettings=1
+EmbeddedImage=Kkthnx_OSD_Bar_Icons_c46d1405.png
+PingAddr=
+[General]
+Sources=6
+Tables=0
+Layers=1
+[Source0]
+Name=GPU temp
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 temperature
+[Source1]
+Name=GPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source2]
+Name=VRAM
+Units=GB
+Format=%.1f
+Formula=x/1024
+Provider=HAL
+ID=GPU1 memory usage
+[Source3]
+Name=CPU temp
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU temperature
+[Source4]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source5]
+Name=RAM
+Units=GB
+Format=%.1f
+Formula=x/1024
+Provider=HAL
+ID=RAM usage
+[Layer0]
+Name=Bar
+Text=<I=15,18,1,1,15,18> <C=FF7A45,,60,F0E442,60,120,E6EDF3,120,(FR,0)><FR><C> <C=8B949E><S=-75>FPS<S><C>  <I=15,18,25,1,15,18> <C=E6EDF3,,8.4,F0E442,8.4,16.7,FF7A45,16.7,(FT,0)><FT><C> <C=8B949E><S=-75>ms<S><C> <C=56B4E9><G=Frametime,40,18,3,0,50,10><C>  <I=15,18,49,1,15,18> <C=E6EDF3,,75,F0E442,75,83,FF7A45,83,(%GPU temp%,0)>%GPU temp%<C><C=8B949E><S=-75>°C<S><C> <C=E6EDF3>%GPU usage%<C><C=8B949E><S=-75>%<S><C> <C=E6EDF3>%VRAM%<C> <C=8B949E><S=-75>GB<S><C>  <I=15,18,73,1,15,18> <C=E6EDF3,,80,F0E442,80,90,FF7A45,90,(%CPU temp%,0)>%CPU temp%<C><C=8B949E><S=-75>°C<S><C> <C=E6EDF3>%CPU usage%<C><C=8B949E><S=-75>%<S><C>  <I=15,18,97,1,15,18> <C=E6EDF3>%RAM%<C> <C=8B949E><S=-75>GB<S><C>  <I=15,18,121,1,15,18> <C=E6EDF3><TIME=%I:%M><C> <C=8B949E><S=-75><TIME=%p><S><C>
+PositionSticky=1
+ExtentX=-1
+ExtentY=-1
+ExtentOrigin=4
+FixedAlignment=1
+BgndColor=C80B0E14
+MarginLeft=0
+MarginTop=0
+MarginRight=-24
+MarginBottom=-1

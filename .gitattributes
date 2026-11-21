@@ -1,0 +1,4 @@
+# RTSS reads these byte for byte, keep CRLF and the ANSI degree sign intact
+*.ovl -text
+*.ovx binary
+*.png binary

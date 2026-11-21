@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# screen captures from tools/cap.ps1
+*_1x.png
+capture*.png
+compare.ovl
